@@ -1,0 +1,83 @@
+
+  
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body style="font-family: Poppins">
+    <div class="resume-container">
+        <!-- Form to Enter User Information -->
+        <div id="input-form-container">
+            <form id="info-form">
+                <h2>Enter Your Information</h2>
+                <label for="profile-image-input">Profile Image:</label>
+                <input type="file" id="profile-image-input" accept="image/*" />
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" required />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required />
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" required />
+
+                <label for="summary">Summary:</label>
+                <textarea id="summary" required></textarea>
+
+                <label for="education">Education (e.g., Degree, Institution, Year):</label>
+                <input type="text" id="education" required />
+
+                <label for="skills">Skills (comma-separated):</label>
+                <input type="text" id="skills" required />
+
+                <button type="submit">Generate Resume</button>
+            </form>
+        </div>
+
+        <!-- Resume Display Section -->
+        <div class="hide" id="resume-display-container">
+            <header>
+                <img src="" alt="User Profile" class="profile-image" id="profile-image" required />
+                <h1 id="user-name">Your Name</h1>
+                <p id="user-email" class="contact-info">Email: example@gmail.com</p>
+                <p id="user-phone" class="contact-info">Phone: +123 456 7890</p>
+            </header>
+
+            <section class="section">
+                <fieldset>
+                    <h2>Summary</h2>
+                    <p id="user-summary">Your summary will appear here...</p>
+                </fieldset>
+            </section>
+
+            <section class="section">
+                <fieldset>
+                    <h2>Education</h2>
+                    <div class="education" id="user-education">
+                        <p>Your education details will appear here...</p>
+                    </div>
+                </fieldset>
+            </section>
+
+            <section class="section">
+                <fieldset>
+                    <h2>Skills</h2>
+                    <ul id="user-skills">
+                        <li>Your skills will appear here...</li>
+                    </ul>
+                </fieldset>
+            </section>
+        </div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
