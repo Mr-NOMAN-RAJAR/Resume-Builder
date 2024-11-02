@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #655ace, #d65cc2, #8ae6e6);
+  color: #ffffff;
+  padding: 20px;
+}
+
+.resume-container {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  background: #000758;
+  padding: 30px;
+  border-radius: 15px;
+  color: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  outline: none;
+}
+
+header, .section {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  color: #d6ee4f;
+  font-size: 2rem;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.contact-info {
+  font-size: 0.9rem;
+  color: #dddddd;
+  text-align: center;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin: 0 auto 10px;
+  display: block;
+  object-fit: cover;
+}
+
+fieldset h2 {
+  font-size: 1.2rem;
+  color: #0080ff;
+  margin-bottom: 8px;
+}
+
+.section p, .section ul {
+  margin-left: 20px;
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+#info-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#info-form label {
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+#info-form input, #info-form textarea, #info-form button {
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+#info-form input, #info-form textarea {
+  background: #c4c4c4;
+  color: #000000;
+}
+
+#info-form button {
+  background-color: #0099ff;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#info-form button:hover {
+  background-color: #00ffc8;
+}
+.hide {
+  margin-top: 20px;
+  
+  display: none;
+  
+}
