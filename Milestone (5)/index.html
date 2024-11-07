@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Dynamic Editable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+</head>
+<body style="font-family: Poppins">
+
+    <div id="form-container">
+        <!-- Form Section -->
+        <form id="info-form">
+            <!-- Your form fields go here -->
+            <input id="profile-image-input" type="file">
+            <input id="name" type="text" placeholder="Name">
+            <input id="email" type="email" placeholder="Email">
+            <input id="phone" type="tel" placeholder="Phone">
+            <textarea id="summary" placeholder="Summary"></textarea>
+            <input id="education" type="text" placeholder="Education">
+            <input id="skills" type="text" placeholder="Skills (comma separated)">
+            <button type="submit">Generate Resume</button>
+        </form>
+    </div>
+    
+    <div id="resume-display-container">
+        <img id="profile-image" src="" alt="Profile Image">
+        <h1 id="user-name">John Doe</h1>
+        <p id="user-email">Email: john.doe@example.com</p>
+        <p id="user-phone">Phone: 123-456-7890</p>
+    
+        <h2 class="section-heading">Summary</h2>
+        <p id="user-summary">Experienced web developer...</p>
+    
+        <h2 class="section-heading">Education</h2>
+        <div id="user-education"><p>Bachelor of Science in Computer Science...</p></div>
+    
+        <h2 class="section-heading">Skills</h2>
+        <ul id="user-skills">
+            <li>JavaScript</li>
+            <li>HTML/CSS</li>
+            <li>React</li>
+        </ul>
+    </div>
+    <div id="downloadButton1">
+        <button id="downloadButton">Download Resume</button>
+
+        <button id="shareButton">Share Resume</button>
+
+    </div>
+    
+    <script src="script.js" type="module"></script>
+</body>
+</html>
